@@ -1,0 +1,60 @@
+
+#root{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo-fondo{
+    /* background: black; */
+    background: rgba(11,201,212,1);
+    background: -moz-linear-gradient(-45deg, rgba(11,201,212,1) 0%, rgba(0,235,180,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(11,201,212,1)), color-stop(100%, rgba(0,235,180,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(11,201,212,1) 0%, rgba(0,235,180,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(11,201,212,1) 0%, rgba(0,235,180,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(11,201,212,1) 0%, rgba(0,235,180,1) 100%);
+    background: linear-gradient(135deg, rgba(11,201,212,1) 0%, rgba(0,235,180,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0bc9d4', endColorstr='#00ebb4', GradientType=1 );
+    width: 100px;
+    height: 100px;
+    margin-top: -110%;
+    overflow: hidden;
+    animation-name: logo;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#img-logo{
+    width: 100%;
+    margin-left: -100%;
+    animation-name: letras;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+}
+
+@keyframes logo {
+    0% {margin-top: -110%;
+        transform: rotate(360deg);}
+        
+        50% {
+            margin-top: 20%;
+            height: 50px;}
+    80% {
+        height: 100px;
+        margin-top: 0;
+        }
+    100% {
+        height: 100px;
+        margin-top: 0;
+        }
+}
+
+@keyframes letras {
+    0% {margin-left: -100%; opacity: 0;}
+    80% {margin-left: 10%;}
+    100% {margin-left: 0;}
+}
